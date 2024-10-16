@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+    <div class="container">
+        <h1>WEATHER APP</h1>
+        <div class="tab_container">
+            <p userTab>Your Weather</p>
+            <p serachTab>Search Weather</p>
+        </div>
+        <div class="grantAccessContainer">
+            <img src="./accests/accests/location.png" alt="">
+            <p>Grant Location Access</p>
+            <p>Allow access to get weather information</p>
+            <button grantAccessBtn>GRANT ACCESS</button>
+        </div>
+       
+        <form action="" class="formSubmit">
+            <input type="text" placeholder="Enter the city..." searchInput>
+            <button type="submit" submitBtn><img src="./accests/accests/search.png" alt=""></button>
+        </form>
+        <div class="loadingBar">
+            <img src="./accests/accests/loading.gif" alt="">
+        </div>
+
+        <div class="weatherInfo">
+            <div class="name">
+                <p city></p>
+                <img nationFlag>
+            </div>
+            <p weatherCondition></p>
+            <img weatherImg>
+            <div temp></div>
+            <div class="waether_details">
+                <div class="windSpeed card">
+                    <img src="./accests/accests/wind.png" alt="">
+                    <p>WINDSPEED</p>
+                    <p windSpeedCalculation></p>
+                </div>
+                <div class="humidity card">
+                    <img src="./accests/accests/humidity.png" alt="">
+                    <p>HUMIDITY</p>
+                    <p humidityPercentage></p>
+                </div>
+                <div class="clouds card">
+                    <img src="./accests/accests/cloud.png" alt="">
+                    <p>CLOUDS</p>
+                    <p cloudPercentage></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
